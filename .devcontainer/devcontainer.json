@@ -1,0 +1,16 @@
+{
+  "name": "ROS2 Humble",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "ros",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "remoteEnv": { "DISPLAY": ":1" },
+  "forwardPorts": [6080],
+  "portsAttributes": { "6080": { "label": "Desktop (noVNC)" } },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-iot.vscode-ros", "ms-python.python", "ms-vscode.cpptools"]
+    }
+  }
+}
